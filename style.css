@@ -1,0 +1,89 @@
+﻿/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3b5998;
+    padding: 10px 20px;
+    color: white;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar .search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .search {
+    padding: 8px;
+    width: 250px;
+}
+
+.navbar .search-bar i {
+    margin-left: 10px;
+    color: #fff;
+}
+
+.navbar .profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.change-pic {
+    background-color: white;
+    color: #3b5998;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Sidebar */
+.sidebar ul, .sidebar-right ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li, .sidebar-right ul li {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.sidebar ul li i, .sidebar-right ul li i {
+    margin-right: 10px;
+}
+
+/* Post and Feed */
+.post button, .react-btn, .comment-btn {
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #3b5998;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.post button i, .react-btn i, .comment-btn i {
+    margin-right: 5px;
+}
+
+/* Comments */
+.comment {
+    display: flex;
+    align-items: center;
+    padding: 5px 0;
+}
+
+.comment i {
+    margin-right: 5px;
+}
+

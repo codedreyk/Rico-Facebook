@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fab fa-facebook"></i> Facebook
+        </div>
+        <div class="search-bar">
+            <input type="text" class="search" placeholder="Search Facebook">
+            <i class="fas fa-search"></i>
+        </div>
+        <div class="profile">
+            <!-- Profile Picture -->
+            <img id="profilePic" src="default-profile.jpg" alt="Profile Picture">
+            <input type="file" id="uploadProfilePic" style="display: none;">
+            <label for="uploadProfilePic" class="change-pic"><i class="fas fa-camera"></i> Change Pic</label>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Left Sidebar -->
+        <aside class="sidebar">
+            <ul>
+                <li><i class="fas fa-home"></i> News Feed</li>
+                <li><i class="fas fa-envelope"></i> Messages</li>
+                <li><i class="fas fa-calendar"></i> Events</li>
+                <li><i class="fas fa-users"></i> Groups</li>
+            </ul>
+        </aside>
+
+        <!-- Main Content Area -->
+        <section class="content">
+            <div class="post">
+                <textarea id="postText" placeholder="What's on your mind?"></textarea>
+                <button id="postBtn"><i class="fas fa-paper-plane"></i> Post</button>
+            </div>
+
+            <!-- Dynamic Feed -->
+            <div class="feed" id="feed">
+                <!-- Posts will appear here dynamically -->
+            </div>
+        </section>
+
+        <!-- Right Sidebar -->
+        <aside class="sidebar-right">
+            <div>Friends Online</div>
+            <ul>
+                <li><i class="fas fa-user"></i> Friend 1</li>
+                <li><i class="fas fa-user"></i> Friend 2</li>
+                <li><i class="fas fa-user"></i> Friend 3</li>
+            </ul>
+        </aside>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
+
